@@ -1,8 +1,10 @@
 
 START_MSG = """
-Hello <b>{}</b> ! I'm <b>Akinator(Unofficial)</b>.
-We can play a guessing game.
-Do <code>/play</code>
+Hello <b>{}</b> ! .♥️🖤
+
+🐈‍⬛We can play a guessing game.🐈‍⬛
+
+Click 👉🏻  /play
 """
 
 ME_MSG = """
