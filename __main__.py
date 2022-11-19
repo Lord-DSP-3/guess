@@ -45,7 +45,7 @@ def aki_start(update: Update, context: CallbackContext) -> None:
 
 def aki_find(update: Update, context: CallbackContext) -> None:
     total_users = totalUsers()
-    update.message.reply_text(f"Users : {total_users}")
+    update.message.reply_text(f"🖤♥️ : {total_users} 🐈‍⬛")
 
 
 def aki_play_cmd_handler(update: Update, context: CallbackContext) -> None:
@@ -56,7 +56,7 @@ def aki_play_cmd_handler(update: Update, context: CallbackContext) -> None:
     aki = Akinator()
     msg = update.message.reply_photo(
         photo=open('aki_pics/aki_01.png', 'rb'),
-        caption="Loading..."
+        caption="🐈‍⬛Loading..."
     )
     updateTotalGuess(user_id, total_guess=1)
     q = aki.start_game(language=getLanguage(user_id), child_mode=getChildMode(user_id))
@@ -198,7 +198,7 @@ def del_data(context:CallbackContext, user_id: int):
 
 def aki_lead(update: Update, _:CallbackContext) -> None:
     update.message.reply_text(
-        text="Check Leaderboard on specific categories in Akinator.",
+        text="Check Leaderboard on specific categories in Bot.",
         reply_markup=AKI_LEADERBOARD_KEYBOARD
     )
 
