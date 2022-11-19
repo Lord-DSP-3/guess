@@ -49,7 +49,7 @@ Change Playing Language.
 """
 
 CHILDMODE_MSG = """
-If Child mode is enabled, akinator won't show any NSFW content.
+If Child mode is enabled, I won't show any NSFW🔞 content.
 <b>Current Status :</b> <pre>Child mode is {} !</pre>
 """
 
