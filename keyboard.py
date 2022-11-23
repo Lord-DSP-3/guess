@@ -1,17 +1,26 @@
-from strings import AKI_LANG_CODE, GITHUB_URL, DEV1_URL, DEV2_URL, GRP_URL, CNL_URL
+from strings import AKI_LANG_CODE, GITHUB_URL, DEV1_URL, DEV2_URL, GRP_URL, CNL_URL, SHARE_IT, ADDBOT
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from typing import Union
 
 START_KEYBOARD = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton('♥️🖤♥️SHARE🖤♥️🖤', GITHUB_URL)
+            InlineKeyboardButton('♥️🖤♥️READ FULL DETAILS 🖤♥️🖤', GITHUB_URL)
         ],
         [
             InlineKeyboardButton('🐈', GRP_URL),
             InlineKeyboardButton('🖤', DEV1_URL),
             InlineKeyboardButton('♥️', DEV2_URL),
             InlineKeyboardButton('🐈‍⬛', CNL_URL)    
+        ]
+    ]
+)
+
+HELP_KEYBOARD = InlineKeyboardMarkup(
+    [
+        [
+            InlineKeyboardButton('♥️SHARE🖤', SHARE_IT),
+            InlineKeyboardButton('♥️ADD To GROUP🖤', ADDBOT)
         ]
     ]
 )
