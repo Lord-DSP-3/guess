@@ -5,13 +5,13 @@ from typing import Union
 START_KEYBOARD = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton('HELP and COMMANDS', GITHUB_URL)
+            InlineKeyboardButton('COMMANDS_HELP', GITHUB_URL)
         ],
         [
-            InlineKeyboardButton('🌌', GRP_URL),
-            InlineKeyboardButton('Developer', DEV1_URL),
-            InlineKeyboardButton('Github', DEV2_URL),
-            InlineKeyboardButton('🏞', CNL_URL)    
+            InlineKeyboardButton('🐈', GRP_URL),
+            InlineKeyboardButton('🖤', DEV1_URL),
+            InlineKeyboardButton('♥️', DEV2_URL),
+            InlineKeyboardButton('🐈‍⬛', CNL_URL)    
         ]
     ]
 )
