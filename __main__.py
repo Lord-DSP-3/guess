@@ -252,7 +252,7 @@ def main():
     updater = Updater(token=BOT_TOKEN)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('start', aki_start, run_async=True))
-    dp.add_handler(CommandHandler('guesshelp', aki_help, run_async=True))
+    dp.add_handler(CommandHandler('help', aki_help, run_async=True))
     dp.add_handler(CommandHandler('cgp', aki_find, run_async=True))
     dp.add_handler(CommandHandler('me', aki_me, run_async=True))
     dp.add_handler(CommandHandler('guess', aki_play_cmd_handler, run_async=True))
