@@ -5,12 +5,7 @@ START_KEYBOARD = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton('HELP & COMMANDS', url="https://t.me/gamee"),
-        ],
-        [
-            InlineKeyboardButton('🌌', url="https://t.me/UNITED_COMMUNITY_OF_OTAKUS"),
-            InlineKeyboardButton('🖤🐈', url="https://t.me/MaidShiro"),
-            InlineKeyboardButton('♥️🐈‍⬛', url="https://t.me/Lord_DSP"),
-            InlineKeyboardButton('🆘', url="https://t.me/Anime_Gaming_Chat_Global"),
+            InlineKeyboardButton('HELP & COMMANDS', user_id=1497264683)
         ]
     ]
 )
