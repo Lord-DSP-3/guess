@@ -1,17 +1,17 @@
-from strings import AKI_LANG_CODE, DEV_URL, GITHUB_URL
+from strings import AKI_LANG_CODE, GITHUB_URL, DEV1_URL, DEV2_URL, GRP_URL, CNL_URL
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from typing import Union
 
 START_KEYBOARD = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton('HELP', url="https://t.me/gamee"),
-        ],
+            InlineKeyboardButton('HELP and COMMANDS', GITHUB_URL)
+        ]
         [
-            InlineKeyboardButton('🌌', url="https://t.me/UNITED_COMMUNITY_OF_OTAKUS"),
-            InlineKeyboardButton('🖤🐈', user_id=1497264683),
-            InlineKeyboardButton('♥️🐈‍⬛', user_id=1302714537),
-            InlineKeyboardButton('🆘', url="https://t.me/Anime_Gaming_Chat_Global"),
+            InlineKeyboardButton('🌌', GRP_URL),
+            InlineKeyboardButton('Developer', DEV1_URL),
+            InlineKeyboardButton('Github', DEV2_URL),
+            InlineKeyboardButton('🏞', CNL_URL)    
         ]
     ]
 )
