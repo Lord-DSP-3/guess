@@ -4,7 +4,7 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 START_KEYBOARD = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton('HELP / COMMANDS', url="https://t.me/gamee"),
+            InlineKeyboardButton('HELP & COMMANDS', url="https://t.me/gamee"),
         ],
         [
             InlineKeyboardButton('🌌', url="https://t.me/UNITED_COMMUNITY_OF_OTAKUS"),
