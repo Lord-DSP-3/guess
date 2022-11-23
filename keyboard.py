@@ -5,7 +5,7 @@ from typing import Union
 START_KEYBOARD = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton('COMMANDS_HELP', GITHUB_URL)
+            InlineKeyboardButton('♥️🖤SHARE🖤♥️, GITHUB_URL)
         ],
         [
             InlineKeyboardButton('🐈', GRP_URL),
