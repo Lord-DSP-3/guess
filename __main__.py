@@ -122,8 +122,8 @@ def aki_win(update: Update, context: CallbackContext):
     if ans =='y':
         query.message.edit_media(
             InputMediaPhoto(
-                media=open('aki_pics/aki_win.png', 'rb'),
-                caption="gg!"
+                media=open('aki_pics/aki_win.gif', 'rb'),
+                caption="yay!  >⁠.⁠<"
             ),
             reply_markup=None
         )
