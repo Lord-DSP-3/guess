@@ -123,8 +123,8 @@ def aki_win(update: Update, context: CallbackContext):
     if ans =='y':
         query.message.edit_media(
             InputMediaPhoto(
-                media=open('aki_pics/aki_win.png', 'rb'),
-                caption="gg!"
+                media=open('aki_pics/aki_win.mp3', 'rb'),
+                caption="yay! <3"
             ),
             reply_markup=None
         )
@@ -133,7 +133,7 @@ def aki_win(update: Update, context: CallbackContext):
         query.message.edit_media(
             InputMediaPhoto(
                 media=open('aki_pics/aki_defeat.png', 'rb'),
-                caption="bruh :("
+                caption="TwT"
             ),
             reply_markup=None
         )
