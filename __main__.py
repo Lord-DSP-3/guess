@@ -38,15 +38,20 @@ def aki_start(update: Update, context: CallbackContext) -> None:
     user_name = update.effective_user.username
     #Adding user to the database.
     addUser(user_id, first_name, last_name, user_name)
-    update.message.reply_text(START_MSG.format(first_name), 
-                              parse_mode=ParseMode.HTML, 
-                              reply_markup=START_KEYBOARD)
+#    update.message.reply_text(START_MSG.format(first_name), 
+#                              parse_mode=ParseMode.HTML, 
+#                              reply_markup=START_KEYBOARD)
 
 
 def aki_find(update: Update, context: CallbackContext) -> None:
     total_users = totalUsers()
     update.message.reply_text(f"🖤♥️ : {total_users} 🐈‍⬛")
 
+def aki_help(update: Update, context: CallbackContext) -> None:
+    first_name = update.effective_user.first_name
+    update.message.reply_text(START_MSG.format(first_name), 
+                              parse_mode=ParseMode.HTML, 
+                              reply_markup=START_KEYBOARD)
 
 def aki_play_cmd_handler(update: Update, context: CallbackContext) -> None:
 
@@ -246,6 +251,7 @@ def main():
     updater = Updater(token=BOT_TOKEN)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('start', aki_start, run_async=True))
+    dp.add_handler(CommandHandler('helpguess', aki_help, run_async=True))
     dp.add_handler(CommandHandler('cgp', aki_find, run_async=True))
     dp.add_handler(CommandHandler('me', aki_me, run_async=True))
     dp.add_handler(CommandHandler('guess', aki_play_cmd_handler, run_async=True))
