@@ -4,18 +4,13 @@ Hello <b>{}</b> ! .♥️🖤
 🐈‍⬛Let's play a guessing game.🐈‍⬛
 Click 👉🏻  /guess
 
-</> COMMANDS:
-/helpguess - All Commands information/guide of guess game
-
-/ guess - start your GAME session
- 
-/me - your stats in game
-
-/topguess - Global leaderboard of users playing this game Across the World
-
-/language - Customise Language of the game (default: ENGLISH)
-
-/childmode - Enable or Disable NSFW(🔞 Content)
+COMMANDS:
+/helpguess - All Commands information/guide of guess game.
+/guess - start your GAME session.
+/me - your stats in game.
+/topguess - Global leaderboard of users playing this game Across the World.
+/language - Customise Language of the game. default: ENGLISH
+/childmode - Enable or Disable NSFW🔞 Content
 """
 
 ME_MSG = """
