@@ -19,8 +19,8 @@ START_KEYBOARD = InlineKeyboardMarkup(
 HELP_KEYBOARD = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton('♥️SHARE🖤', SHARE_IT),
-            InlineKeyboardButton('♥️ADD To GROUP🖤', ADDBOT)
+            InlineKeyboardButton('SHARE', ADDBOT),
+            InlineKeyboardButton('ADD GROUP', SHARE_IT)
         ]
     ]
 )
