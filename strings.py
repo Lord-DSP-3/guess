@@ -1,4 +1,4 @@
-START_MSG = ""'
+START_MSG = """
 Hello <b>{}</b> ! .♥️🖤
 🐈‍⬛Let's play a guessing game.🐈‍⬛
 
@@ -6,18 +6,14 @@ Click 👉🏻  /guess
 """
 
 HELP_MSG = """
-ℹ️ABOUT:
-This bot can guess any existing or no existing characters, model, actors and many more then you can think of...
-Just answer the asked queries CORRECTLY.
-If it doesn't work /start the bot again and try again or contact staff
-
-COMMANDS:
-/helpguess - All Commands information/guide of guess game.
 /guess - start your GAME session.
 /me - your stats in game.
-/topguess - Global leaderboard of users playing this game Across the World.
-/language - Customise Language of the game. default: ENGLISH
+/topguess - Game leaderboard
+/language - Change Language
 /childmode - Enable or Disable NSFW🔞 Content
+/start - if Alive
+/help - get command and working info
+/cgp - developers knows
 """
 
 ME_MSG = """
