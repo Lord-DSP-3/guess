@@ -1,8 +1,15 @@
-
-START_MSG = """
+START_MSG = ""'
 Hello <b>{}</b> ! .♥️🖤
 🐈‍⬛Let's play a guessing game.🐈‍⬛
+
 Click 👉🏻  /guess
+"""
+
+HELP_MSG = """
+ℹ️ABOUT:
+This bot can guess any existing or no existing characters, model, actors and many more then you can think of...
+Just answer the asked queries CORRECTLY.
+If it doesn't work /start the bot again and try again or contact staff
 
 COMMANDS:
 /helpguess - All Commands information/guide of guess game.
@@ -25,8 +32,9 @@ ME_MSG = """
 <b>Unfinished Guess :</b> <code>{}</code>
 <b>Total Questions :</b> <code>{}</code>
 """
-
-GITHUB_URL = "https://t.me/share/text?text=@KawaiiOtakus_bot"
+ADDBOT = "https://t.me/share/text?text=@KawaiiOtakus_bot"
+SHARE_IT = "https://t.me/Maid_Robot?startgroup=true"
+GITHUB_URL = "https://telegra.ph/GUESSY-BOT-CHAN-HELPER-SCRIT-11-23"
 DEV1_URL = "https://t.me/Lord_DSP_3"
 DEV2_URL = "https://t.me/MaidShiro"
 CNL_URL = "https://t.me/UNITED_COMMUNITY_OF_OTAKUS"
