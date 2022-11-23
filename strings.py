@@ -4,7 +4,7 @@ Hello <b>{}</b> ! .♥️🖤
 
 🐈‍⬛We can play a guessing game.🐈‍⬛
 
-Click 👉🏻  /play
+Click 👉🏻  /guess
 """
 
 ME_MSG = """
