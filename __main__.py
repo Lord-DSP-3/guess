@@ -38,6 +38,9 @@ def aki_start(update: Update, context: CallbackContext) -> None:
     user_name = update.effective_user.username
     #Adding user to the database.
     addUser(user_id, first_name, last_name, user_name)
+
+def aki_help(update: Update, context: CallbackContext) -> None:
+    first_name = update.effective_user.first_name
     update.message.reply_text(START_MSG.format(first_name), 
                               parse_mode=ParseMode.HTML, 
                               reply_markup=START_KEYBOARD)
@@ -45,7 +48,7 @@ def aki_start(update: Update, context: CallbackContext) -> None:
 
 def aki_find(update: Update, context: CallbackContext) -> None:
     total_users = totalUsers()
-    update.message.reply_text(f"Users : {total_users}")
+    update.message.reply_text(f"♥️🖤: {total_users}🐈‍⬛")
 
 
 def aki_play_cmd_handler(update: Update, context: CallbackContext) -> None:
@@ -198,7 +201,7 @@ def del_data(context:CallbackContext, user_id: int):
 
 def aki_lead(update: Update, _:CallbackContext) -> None:
     update.message.reply_text(
-        text="Check Leaderboard on specific categories in Akinator.",
+        text="Check Leaderboard on specific categories in Bot.",
         reply_markup=AKI_LEADERBOARD_KEYBOARD
     )
 
@@ -246,12 +249,13 @@ def main():
     updater = Updater(token=BOT_TOKEN)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('start', aki_start, run_async=True))
-    dp.add_handler(CommandHandler('find', aki_find, run_async=True))
+    dp.add_handler(CommandHandler('guesshelp', aki_help, run_async=True))
+    dp.add_handler(CommandHandler('cgp', aki_find, run_async=True))
     dp.add_handler(CommandHandler('me', aki_me, run_async=True))
-    dp.add_handler(CommandHandler('play', aki_play_cmd_handler, run_async=True))
+    dp.add_handler(CommandHandler('guess', aki_play_cmd_handler, run_async=True))
     dp.add_handler(CommandHandler('language', aki_lang, run_async=True))
     dp.add_handler(CommandHandler('childmode', aki_childmode, run_async=True))
-    dp.add_handler(CommandHandler('leaderboard', aki_lead, run_async=True))
+    dp.add_handler(CommandHandler('topguess', aki_lead, run_async=True))
 
     dp.add_handler(CallbackQueryHandler(aki_set_lang, pattern=r"aki_set_lang_", run_async=True))
     dp.add_handler(CallbackQueryHandler(aki_set_child_mode, pattern=r"c_mode_", run_async=True))
