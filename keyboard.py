@@ -9,8 +9,8 @@ START_KEYBOARD = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton('🐈', GRP_URL),
-            InlineKeyboardButton('🖤', DEV1_URL),
-            InlineKeyboardButton('♥️', DEV2_URL),
+            InlineKeyboardButton('🖤', user_id=1302714537),
+            InlineKeyboardButton('♥️', user_id=1497264683),
             InlineKeyboardButton('🐈‍⬛', CNL_URL)    
         ]
     ]
