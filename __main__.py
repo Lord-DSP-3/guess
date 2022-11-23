@@ -40,7 +40,7 @@ def aki_start(update: Update, context: CallbackContext) -> None:
     addUser(user_id, first_name, last_name, user_name)
     update.message.reply_text(START_MSG.format(first_name), 
                               parse_mode=ParseMode.HTML, 
-                              reply_markup=START_KEYBOARD)
+                              reply_markup=HELP_KEYBOARD)
 
 def aki_help(update: Update, context: CallbackContext) -> None:
     first_name = update.effective_user.first_name
@@ -253,7 +253,7 @@ def main():
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('start', aki_start, run_async=True))
     dp.add_handler(CommandHandler('help', aki_help, run_async=True))
-    dp.add_handler(CommandHandler('cgp', aki_find, run_async=True))
+    dp.add_handler(CommandHandler('pvt', aki_find, run_async=True))
     dp.add_handler(CommandHandler('me', aki_me, run_async=True))
     dp.add_handler(CommandHandler('guess', aki_play_cmd_handler, run_async=True))
     dp.add_handler(CommandHandler('language', aki_lang, run_async=True))
