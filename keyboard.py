@@ -6,7 +6,7 @@ START_KEYBOARD = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton('HELP and COMMANDS', GITHUB_URL)
-        ]
+        ],
         [
             InlineKeyboardButton('🌌', GRP_URL),
             InlineKeyboardButton('Developer', DEV1_URL),
