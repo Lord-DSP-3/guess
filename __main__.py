@@ -123,7 +123,7 @@ def aki_win(update: Update, context: CallbackContext):
     if ans =='y':
         query.message.edit_media(
             InputMediaPhoto(
-                media=open('aki_pics/aki_win.mp3', 'rb'),
+                media=open('aki_pics/aki_win.mp4', 'rb'),
                 caption="yay! <3"
             ),
             reply_markup=None
