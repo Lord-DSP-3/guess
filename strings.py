@@ -31,7 +31,7 @@ ME_MSG = """
 <b>Total Questions :</b> <code>{}</code>
 """
 
-GITHUB_URL = "https://telegra.ph/GUESSY-BOT-CHAN-HELPER-SCRIT-11-23"
+GITHUB_URL = "https://t.me/share/text?text=@KawaiiOtakus_bot"
 DEV1_URL = "https://t.me/Lord_DSP_3"
 DEV2_URL = "https://t.me/MaidShiro"
 CNL_URL = "https://t.me/UNITED_COMMUNITY_OF_OTAKUS"
