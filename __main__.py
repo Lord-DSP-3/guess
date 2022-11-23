@@ -245,7 +245,7 @@ def aki_lead_cb_handler(update: Update, context:CallbackContext) -> None:
 def main():
     updater = Updater(token=BOT_TOKEN)
     dp = updater.dispatcher
-    dp.add_handler(CommandHandler('game', aki_start, run_async=True))
+    dp.add_handler(CommandHandler('start', aki_start, run_async=True))
     dp.add_handler(CommandHandler('find', aki_find, run_async=True))
     dp.add_handler(CommandHandler('me', aki_me, run_async=True))
     dp.add_handler(CommandHandler('guess', aki_play_cmd_handler, run_async=True))
