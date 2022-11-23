@@ -2,8 +2,20 @@
 START_MSG = """
 Hello <b>{}</b> ! .♥️🖤
 🐈‍⬛Let's play a guessing game.🐈‍⬛
-
 Click 👉🏻  /guess
+
+</> COMMANDS:
+/helpguess - All Commands information/guide of guess game
+
+/ guess - start your GAME session
+ 
+/me - your stats in game
+
+/topguess - Global leaderboard of users playing this game Across the World
+
+/language - Customise Language of the game (default: ENGLISH)
+
+/childmode - Enable or Disable NSFW(🔞 Content)
 """
 
 ME_MSG = """
@@ -19,7 +31,7 @@ ME_MSG = """
 <b>Total Questions :</b> <code>{}</code>
 """
 
-GITHUB_URL = "https://t.me/anime_chat_ranking_system"
+GITHUB_URL = "https://telegra.ph/GUESSY-BOT-CHAN-HELPER-SCRIT-11-23"
 DEV1_URL = "https://t.me/Lord_DSP_3"
 DEV2_URL = "https://t.me/MaidShiro"
 CNL_URL = "https://t.me/UNITED_COMMUNITY_OF_OTAKUS"
