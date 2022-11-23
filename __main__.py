@@ -4,7 +4,7 @@ from akinator import Akinator
 from telegram.files.inputmedia import InputMediaPhoto
 from random import randint
 from pprint import pprint
-from keyboard import AKI_LANG_BUTTON, AKI_LEADERBOARD_KEYBOARD, AKI_PLAY_KEYBOARD, AKI_WIN_BUTTON, CHILDMODE_BUTTON, START_KEYBOARD
+from keyboard import AKI_LANG_BUTTON, AKI_LEADERBOARD_KEYBOARD, AKI_PLAY_KEYBOARD, AKI_WIN_BUTTON, CHILDMODE_BUTTON, START_KEYBOARD, HELP_KEYBOARD
 from telegram import Update, ParseMode
 from telegram.ext import Updater, CommandHandler, CallbackContext, CallbackQueryHandler
 from config import BOT_TOKEN
@@ -26,7 +26,7 @@ from database import (
     updateTotalQuestions, 
     updateWrongGuess)
 
-from strings import AKI_FIRST_QUESTION, AKI_LANG_CODE, AKI_LANG_MSG, CHILDMODE_MSG, ME_MSG, START_MSG
+from strings import AKI_FIRST_QUESTION, AKI_LANG_CODE, AKI_LANG_MSG, CHILDMODE_MSG, ME_MSG, START_MSG, HELP_MSG
 import akinator
 
 
@@ -38,12 +38,15 @@ def aki_start(update: Update, context: CallbackContext) -> None:
     user_name = update.effective_user.username
     #Adding user to the database.
     addUser(user_id, first_name, last_name, user_name)
-
-def aki_help(update: Update, context: CallbackContext) -> None:
-    first_name = update.effective_user.first_name
     update.message.reply_text(START_MSG.format(first_name), 
                               parse_mode=ParseMode.HTML, 
                               reply_markup=START_KEYBOARD)
+
+def aki_help(update: Update, context: CallbackContext) -> None:
+    first_name = update.effective_user.first_name
+    update.message.reply_text(HELP_MSG.format(first_name), 
+                              parse_mode=ParseMode.HTML, 
+                              reply_markup=HELP_KEYBOARD)
 
 
 def aki_find(update: Update, context: CallbackContext) -> None:
