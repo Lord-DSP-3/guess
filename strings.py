@@ -20,8 +20,8 @@ ME_MSG = """
 """
 
 GITHUB_URL = "https://t.me/anime_chat_ranking_system"
-DEV1_URL = user_id=1302714537
-DEV2_URL = user_id=1497264683
+DEV1_URL = "user_id=1302714537"
+DEV2_URL = "user_id=1497264683"
 CNL_URL = "https://t.me/UNITED_COMMUNITY_OF_OTAKUS"
 GRP_URL = "https://t.me/Anime_Gaming_Chat_Global"
 
