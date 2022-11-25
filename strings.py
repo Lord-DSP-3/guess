@@ -17,10 +17,10 @@ HELP_MSG = """
 
 ME_MSG = """
 <b>Name :</b> <code>{}</code>
-<b>User Name :</b> <code>{}</code>
+<b>User Name :</b> @{}
 <b>User ID :</b> <code>{}</code>
-<b>Language :</b> <code>{}</code>
-<b>Child Mode :</b> <code>{}</code>
+<b>Language :</b> {}
+<b>Child Mode :</b> {}
 <b>Total Guess :</b> <code>{}</code>
 <b>Correct Guess :</b> <code>{}</code>
 <b>Wrong Guess :</b> <code>{}</code>
