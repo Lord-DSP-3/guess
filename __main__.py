@@ -46,7 +46,7 @@ def aki_help(update: Update, context: CallbackContext) -> None:
     first_name = update.effective_user.first_name
     update.message.reply_text(HELP_MSG.format(first_name), 
                               parse_mode=ParseMode.HTML, 
-                              reply_markup=HELP_KEYBOARD)
+                              reply_markup=START_KEYBOARD)
 
 
 def aki_find(update: Update, context: CallbackContext) -> None:
