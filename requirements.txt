@@ -3,3 +3,6 @@ akinator
 pymongo
 dnspython
 python-dotenv
+dash==2.6.0
+pandas
+gunicorn
