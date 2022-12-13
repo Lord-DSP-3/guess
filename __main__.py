@@ -269,7 +269,5 @@ def main():
     updater.start_polling()
     updater.idle()
 
-server =
-
 if __name__ == '__main__':
     main()
