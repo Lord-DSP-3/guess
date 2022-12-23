@@ -1,21 +1,10 @@
 language: python
-
 runtime: python3.8
-
 requirements: requirements.txt
 build:
-
   prebuild:
 
     - pip install -r requirements.txt
-
   postbuild:
-
     - pytest
-
-env:
-
-  SECRET_KEY: abcdefghijk
-
-  DATABASE_URL: postgres://user:pass@host:port/db
   start: flask run --port $PORT
